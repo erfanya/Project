@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../header/doctor.h
+string
+-
+
+../header/person.h
+string
+-
+
+/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Doctor.cpp
+iostream
+-
+string
+-
+person.h
+/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/person.h
+doctor.h
+/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/doctor.h
+
+/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Main.cpp
+iostream
+-
+string
+-
+stdlib.h
+-
+iomanip
+-
+person.h
+/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/person.h
+
