@@ -1,5 +1,5 @@
-#ifndef VISIT_H
-#define VISIT_H
+#ifndef VISIT_HPP
+#define VISIT_HPP
 
 #include <string>
 
