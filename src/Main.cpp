@@ -3,7 +3,7 @@
 #include<stdlib.h>
 #include<iomanip>
 
-#include "person.h"
+#include "person.hpp"
 
 using namespace std;
 
