@@ -1,5 +1,5 @@
-#ifndef DOCTOR_H
-#define DOCTOR_H
+#ifndef DOCTOR_HPP
+#define DOCTOR_HPP
 
 #include <string>
 
