@@ -1,8 +1,8 @@
 #include <iostream>
 #include <string>
 
-#include "person.h"
-#include "doctor.h"
+#include "person.hpp"
+#include "doctor.hpp"
 
 using namespace std;
 
