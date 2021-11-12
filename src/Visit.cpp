@@ -1,10 +1,10 @@
 #include <iostream>
 #include <string>
 
-#include "visit.h"
-#include "person.h"
-#include "patient.h"
-#include "doctor.h"
+#include "visit.hpp"
+#include "person.hpp"
+#include "patient.hpp"
+#include "doctor.hpp"
 
 using namespace std;
 
