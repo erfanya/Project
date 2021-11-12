@@ -1,9 +1,9 @@
-#ifndef PATIENT_H
-#define PATIENT_H
+#ifndef PATIENT_HPP
+#define PATIENT_HPP
 
 #include <string>
 
-#include "person.h"
+#include "person.hpp"
 
 class Patient
 {	
