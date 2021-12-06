@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Main.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Main.cpp.o"
   "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Patient.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Patient.cpp.o"
   "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Person.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Person.cpp.o"
-  "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Visit.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Visit.cpp.o"
+  "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/hospital.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/hospital.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

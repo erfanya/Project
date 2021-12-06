@@ -3,7 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/src/Main.cpp.o"
   "CMakeFiles/app.dir/src/Patient.cpp.o"
   "CMakeFiles/app.dir/src/Person.cpp.o"
-  "CMakeFiles/app.dir/src/Visit.cpp.o"
+  "CMakeFiles/app.dir/src/hospital.cpp.o"
   "app"
   "app.pdb"
 )

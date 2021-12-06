@@ -5,14 +5,12 @@
 
 using namespace std;
 
-Person::Person(string name, int age, Gender gender, string phone_number)
+Person::Person(string name, unsigned int age, Gender gender, string phone_number)
 {
      set_name(name);
      set_age(age);
      set_gender(gender);
      set_phone(phone_number);
-
-     show_inf();
 }
 
 Person::~Person()
@@ -23,7 +21,7 @@ void Person::set_name(string name)
      this->name = name;
 }
 
-void Person::set_age(int age)
+void Person::set_age(unsigned int age)
 {
      this->age = age;
 }
@@ -43,7 +41,7 @@ string Person::get_name() const
      return name;
 }
 	
-int Person::get_age() const
+unsigned int Person::get_age() const
 {
      return age;
 }
@@ -58,10 +56,10 @@ string Person::get_phone() const
      return phone_number;
 }
 
-void Person::show_inf() 
+void Person::show_inf() const
 {
      cout << "*****************"           << endl;
-     cout << "First Name : " << get_name() << "\n" 
+     cout << "Name : " << get_name() << "\n" 
              "Age : "        << get_age()  << "\n"
              "Gender : ";
           switch (get_gender())
@@ -71,9 +69,9 @@ void Person::show_inf()
                break;
           case 1:
                cout << "Female" << endl;
-          case 2:
-               cout << "Unknown" << endl;
+               break;
+          default:
+               throw invalid_argument("Invalid Gender!");
           }
-     cout << "Phone Number : " << get_phone() << endl;
-     cout << "*****************" << endl;   
+     cout << "Phone Number : " << get_phone() << endl;  
 }

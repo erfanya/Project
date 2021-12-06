@@ -109,18 +109,18 @@ CMakeFiles/app.dir/src/Doctor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Doctor.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Doctor.cpp" -o CMakeFiles/app.dir/src/Doctor.cpp.s
 
-CMakeFiles/app.dir/src/Visit.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/Visit.cpp.o: ../src/Visit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/Visit.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/Visit.cpp.o -c "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Visit.cpp"
+CMakeFiles/app.dir/src/hospital.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/hospital.cpp.o: ../src/hospital.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/hospital.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/app.dir/src/hospital.cpp.o -c "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/hospital.cpp"
 
-CMakeFiles/app.dir/src/Visit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/Visit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Visit.cpp" > CMakeFiles/app.dir/src/Visit.cpp.i
+CMakeFiles/app.dir/src/hospital.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/app.dir/src/hospital.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/hospital.cpp" > CMakeFiles/app.dir/src/hospital.cpp.i
 
-CMakeFiles/app.dir/src/Visit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/Visit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Visit.cpp" -o CMakeFiles/app.dir/src/Visit.cpp.s
+CMakeFiles/app.dir/src/hospital.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/hospital.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/hospital.cpp" -o CMakeFiles/app.dir/src/hospital.cpp.s
 
 # Object files for target app
 app_OBJECTS = \
@@ -128,7 +128,7 @@ app_OBJECTS = \
 "CMakeFiles/app.dir/src/Person.cpp.o" \
 "CMakeFiles/app.dir/src/Patient.cpp.o" \
 "CMakeFiles/app.dir/src/Doctor.cpp.o" \
-"CMakeFiles/app.dir/src/Visit.cpp.o"
+"CMakeFiles/app.dir/src/hospital.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
@@ -137,7 +137,7 @@ app: CMakeFiles/app.dir/src/Main.cpp.o
 app: CMakeFiles/app.dir/src/Person.cpp.o
 app: CMakeFiles/app.dir/src/Patient.cpp.o
 app: CMakeFiles/app.dir/src/Doctor.cpp.o
-app: CMakeFiles/app.dir/src/Visit.cpp.o
+app: CMakeFiles/app.dir/src/hospital.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: CMakeFiles/app.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"

@@ -6,33 +6,47 @@
 
 #IncludeRegexTransform: 
 
-../header/doctor.h
+../header/Doctor.hpp
+Person.hpp
+../header/Person.hpp
+string
+-
+vector
+-
+
+../header/Hospital.hpp
+Doctor.hpp
+-
+Patient.hpp
+-
+vector
+-
 string
 -
 
-../header/person.h
+../header/Patient.hpp
+string
+-
+person.hpp
+../header/person.hpp
+
+../header/Person.hpp
 string
 -
 
-/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Doctor.cpp
+../header/person.hpp
+string
+-
+
+/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/hospital.cpp
 iostream
 -
 string
 -
-person.h
-/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/person.h
-doctor.h
-/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/doctor.h
-
-/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Main.cpp
-iostream
+vector
 -
-string
+random
 -
-stdlib.h
+Hospital.hpp
 -
-iomanip
--
-person.h
-/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/person.h
 

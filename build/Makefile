@@ -231,32 +231,32 @@ src/Person.cpp.s:
 	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Person.cpp.s
 .PHONY : src/Person.cpp.s
 
-src/Visit.o: src/Visit.cpp.o
+src/hospital.o: src/hospital.cpp.o
 
-.PHONY : src/Visit.o
+.PHONY : src/hospital.o
 
 # target to build an object file
-src/Visit.cpp.o:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Visit.cpp.o
-.PHONY : src/Visit.cpp.o
+src/hospital.cpp.o:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/hospital.cpp.o
+.PHONY : src/hospital.cpp.o
 
-src/Visit.i: src/Visit.cpp.i
+src/hospital.i: src/hospital.cpp.i
 
-.PHONY : src/Visit.i
+.PHONY : src/hospital.i
 
 # target to preprocess a source file
-src/Visit.cpp.i:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Visit.cpp.i
-.PHONY : src/Visit.cpp.i
+src/hospital.cpp.i:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/hospital.cpp.i
+.PHONY : src/hospital.cpp.i
 
-src/Visit.s: src/Visit.cpp.s
+src/hospital.s: src/hospital.cpp.s
 
-.PHONY : src/Visit.s
+.PHONY : src/hospital.s
 
 # target to generate assembly for a file
-src/Visit.cpp.s:
-	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/Visit.cpp.s
-.PHONY : src/Visit.cpp.s
+src/hospital.cpp.s:
+	$(MAKE) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/hospital.cpp.s
+.PHONY : src/hospital.cpp.s
 
 # Help Target
 help:
@@ -279,9 +279,9 @@ help:
 	@echo "... src/Person.o"
 	@echo "... src/Person.i"
 	@echo "... src/Person.s"
-	@echo "... src/Visit.o"
-	@echo "... src/Visit.i"
-	@echo "... src/Visit.s"
+	@echo "... src/hospital.o"
+	@echo "... src/hospital.i"
+	@echo "... src/hospital.s"
 .PHONY : help
 
 

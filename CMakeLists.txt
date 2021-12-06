@@ -8,7 +8,7 @@ set(SOURCES
     src/Person.cpp
     src/Patient.cpp
     src/Doctor.cpp
-    src/Visit.cpp
+    src/hospital.cpp
 )
 
 include_directories(header)
