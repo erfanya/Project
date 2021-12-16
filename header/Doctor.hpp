@@ -13,7 +13,7 @@ class Doctor : public Person
           enum Specialization {General, Expert, Surgeon};
           
           // Constructor
-          Doctor(std::string name, unsigned int age, Gender gender, std::string phone_number, Specialization specialization);
+          Doctor(std::string name, std::string age, Gender gender, std::string phone_number, Specialization specialization);
          
           //Destructor
 		virtual ~Doctor();
@@ -32,7 +32,7 @@ class Doctor : public Person
      private:
           //Data members      
           unsigned int id; // id
-          Specialization specialization = General;// takhasos 
+          Specialization specialization;// takhasos 
           static std::vector<unsigned int> id_list;
 };
 #endif

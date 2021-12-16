@@ -10,19 +10,20 @@ class Person
 		enum Gender{Male, Female};
 
 		//Constructor
-		Person(std::string name , unsigned int age , Gender gender , std::string phone); 
+		Person(std::string name , std::string age , Gender gender , std::string phone); 
 		
 		//Destructor
 		virtual ~Person();
 	
 		//Set and get functions
 		void set_name(std::string);
-		void set_age(unsigned int);
+		void check_name(std::string);
+		void set_age(std::string);
 		void set_gender(Gender);
 		void set_phone(std::string);
-
+	
 		std::string get_name() const;
-		unsigned int get_age() const;
+		std::string get_age() const;
 		Gender get_gender() const;
 		std::string get_phone() const;
 
@@ -32,7 +33,7 @@ class Person
      private:
 		// Data member
 		std::string name;
-		unsigned int age;
+		std::string age;
 		Gender gender;
 		std::string phone_number;
 };
