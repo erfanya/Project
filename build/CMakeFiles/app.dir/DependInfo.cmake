@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Doctor.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Doctor.cpp.o"
-  "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Main.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Main.cpp.o"
-  "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Patient.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Patient.cpp.o"
-  "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/Person.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/Person.cpp.o"
-  "/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/hospital.cpp" "/mnt/c/Users/SS-Captain/Desktop/Project ph1/build/CMakeFiles/app.dir/src/hospital.cpp.o"
+  "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Doctor.cpp" "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/build/CMakeFiles/app.dir/src/Doctor.cpp.o"
+  "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Main.cpp" "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/build/CMakeFiles/app.dir/src/Main.cpp.o"
+  "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Patient.cpp" "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/build/CMakeFiles/app.dir/src/Patient.cpp.o"
+  "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Person.cpp" "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/build/CMakeFiles/app.dir/src/Person.cpp.o"
+  "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/hospital.cpp" "/mnt/c/Users/SS-Captain/Desktop/Hospital Project/build/CMakeFiles/app.dir/src/hospital.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

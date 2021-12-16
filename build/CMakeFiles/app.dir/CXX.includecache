@@ -38,15 +38,15 @@ string
 string
 -
 
-/mnt/c/Users/SS-Captain/Desktop/Project ph1/src/hospital.cpp
+/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Main.cpp
 iostream
 -
 string
 -
-vector
--
-random
--
+Patient.hpp
+/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Patient.hpp
+Doctor.hpp
+/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Doctor.hpp
 Hospital.hpp
--
+/mnt/c/Users/SS-Captain/Desktop/Hospital Project/src/Hospital.hpp
 

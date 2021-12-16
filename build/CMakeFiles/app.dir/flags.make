@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/mnt/c/Users/SS-Captain/Desktop/Project ph1/header" 
+CXX_INCLUDES = -I"/mnt/c/Users/SS-Captain/Desktop/Hospital Project/header" 
 
