@@ -10,7 +10,7 @@ using namespace std;
 
 std::vector<unsigned int> Doctor::id_list;
 
-Doctor::Doctor(std::string name, unsigned int age, Gender gender, std::string phone_number, Specialization specialization):Person(name, age, gender, phone_number)
+Doctor::Doctor(string name, string age, Gender gender, string phone_number, Specialization specialization):Person(name, age, gender, phone_number)
 {
      make_id();
      set_specialization(specialization);
@@ -67,20 +67,19 @@ Doctor::Specialization Doctor::get_specialization() const
 void Doctor::show_inf() const
 {
      Person::show_inf();
-
-     cout << "ID : " << get_id() << endl;
+     
+     cout << "ID : " << get_id()             << endl;
 
      switch (get_specialization())
      {
      case 0:
-          cout << "Specialization : General Doctor" << endl;
+          cout << "Specialization : General" << endl;
           break;
      case 1:
-          cout << "Specialization : Expert Doctor"  << endl;
+          cout << "Specialization : Expert"  << endl;
           break;
      case 2:
-          cout << "Specialization : Surgeon Doctor" << endl;
-     default:
-          break;
+          cout << "Specialization : Surgeon" << endl;
      }
+     cout << "------------------------"      << endl;
 }
