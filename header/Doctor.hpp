@@ -8,31 +8,22 @@
 
 class Doctor : public Person
 {	
-	public:
-          // enum
-          enum Specialization {General, Expert, Surgeon};
-          
-          // Constructor
-          Doctor(std::string name, std::string age, Gender gender, std::string phone_number, Specialization specialization);
-         
-          //Destructor
-		virtual ~Doctor();
+public:
+    // enum
+    enum Specialization {General, Expert, Surgeon};
 
-          // make id by system
-          void make_id();
-          //set and get functions
-          void set_id(unsigned int);
-		void set_specialization(Specialization);
-        
-	     unsigned int get_id() const;
-          Specialization get_specialization() const;
+    // Constructor
+    Doctor(std::string name, int age, Gender gender, std::string phone_number, Specialization specialization);
 
-          // show information
-          virtual void show_inf() const;
-     private:
-          //Data members      
-          unsigned int id; // id
-          Specialization specialization;// takhasos 
-          static std::vector<unsigned int> id_list;
+    //Destructor
+    virtual ~Doctor();
+
+    //set and get functions
+    void set_specialization(Specialization);
+    Specialization get_specialization() const;
+
+private:
+    //Data members
+    Specialization specialization;// takhasos
 };
 #endif

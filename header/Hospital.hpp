@@ -1,46 +1,46 @@
 #ifndef HOSPITAL_HPP
 #define HOSPITAL_HPP
 
-#include <Doctor.hpp>
-#include <Patient.hpp>
+#include "Doctor.hpp"
+#include "Patient.hpp"
 
 #include <vector>
 #include <string>
 
 class Hospital
 {
-     public:
-          //Constructor
-          Hospital();
+public:
+    Hospital();
+    //Destructor
+    virtual ~Hospital();
 
-          //Destructor
-          virtual ~Hospital();
+    //adds
+    void create_doctor(std::string name, int age, std::string gender, std::string phone_number, std::string specialization);
+    void add_doctor(Doctor);
 
-          //adds
-          void add_doctor(Doctor);
-          void add_patient(Patient);
+    void create_patient(std::string name, int age, std::string gender, std::string phone_number, std::string insurance, std::string illness);
+    void add_patient(Patient);
 
-          //manager xp
-          void increase_manager_xp(unsigned int);
-          void decrease_manager_xp(unsigned int);
-          unsigned int get_manager_xp();
+    //manager xp
+    void increase_manager_xp(int);
+    void decrease_manager_xp(int);
+    int get_manager_xp();
 
-          //visit
-          void set_visit(std::string, std::string);          
-          unsigned int set_room_for_visit();
+    //hospital money
+    void increase_hospital_money(int);
+    int get_hospital_money();
 
-          //search 
-          Doctor & search_doctor(std::string);
-          Patient & search_patient(std::string);
-          
-          //show inf
-          virtual void show_inf();
+    //search
+    Doctor & search_doctor(std::string);
+    Patient & search_patient(std::string);
 
-     private:
-          //data members
-          unsigned int manager_xp = 0;
-          std::vector<Doctor> doctors;
-          std::vector<Patient> patients;
-          static std::vector<unsigned int> rooms;
+    int get_doctors_size();
+    int get_patients_size();
+private:
+    //data members
+    int manager_xp = 0;
+    int hospital_money = 0;
+    std::vector<Doctor> doctors;
+    std::vector<Patient> patients;
 };
 #endif

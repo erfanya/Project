@@ -3,39 +3,39 @@
 
 #include <string>
 
-#include "person.hpp"
+#include "Person.hpp"
 
 class Patient : public Person
 {	
-	public:
-          //enum
-          enum Insurance {No, Yes};
-          enum Illness {Surface, Emergency, Surgery};
-          enum Status {Waiting, Cured};
-          
-          // Constructor
-          Patient(std::string name, std::string age, Gender gender, std::string phone_number, Insurance insturance, Illness illness);
-     
-          //Destructor
-		virtual ~Patient();
+public:
+    //enum
+    enum Insurance {No, Yes};
+    enum Illness {Surface, Emergency, Surgery};
+    enum Status {Waiting, Cured};
 
-          //set functions
-          void set_status(Status);
-          void set_illness(Illness);
-          void set_insurance(Insurance);
+    // Constructor
+    Patient(std::string name, int age, Gender gender, std::string phone_number, Insurance insturance, Illness illness, std::string fee);
 
-          //get functions
-          Status get_status() const;
-          Illness get_illness() const;
-          Insurance get_insurance() const;
+    //Destructor
+    virtual ~Patient();
 
-          // show information
-          virtual void show_inf() const;
-      
-     private:
-          //Data members      
-          Status status; // vaziyat mariz
-          Illness illness; // bimari
-          Insurance insurance; // bime
+    //set functions
+    void set_status(Status);
+    void set_illness(Illness);
+    void set_insurance(Insurance);
+    void set_fee(std::string);
+
+    //get functions
+    Status get_status() const;
+    Illness get_illness() const;
+    Insurance get_insurance() const;
+    std::string get_fee();
+
+private:
+    //Data members
+    Status status; // vaziyat mariz
+    Illness illness; // bimari
+    Insurance insurance; // bime
+    std::string fee;
 };
 #endif
