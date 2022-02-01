@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>addpatient.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>adddoctor.qml</file>
+        <file>setvisit.qml</file>
+        <file>doctorinformation.qml</file>
+        <file>patientinformation.qml</file>
+        <file>hospitalinformation.qml</file>
+        <file>hospital.qml</file>
+        <file>1.jpg</file>
+        <file>2.jpg</file>
+        <file>3.jpg</file>
+        <file>5.jpg</file>
+        <file>4.jpg</file>
+        <file>6.jpg</file>
+        <file>7.jpg</file>
+    </qresource>
+</RCC>
