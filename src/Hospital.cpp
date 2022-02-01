@@ -1,13 +1,14 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <random>
+#include <QDebug>
 
 using namespace std;
 
-#include <Hospital.hpp>
-
-vector<unsigned int> Hospital::rooms;
+#include "../header/Hospital.hpp"
+#include "../header/Doctor.hpp"
+#include "../header/Patient.hpp"
+#include "../header/Patient.hpp"
 
 Hospital::Hospital()
 {}
@@ -17,212 +18,254 @@ Hospital::~Hospital()
 
 void Hospital::add_doctor(Doctor doctor)
 {
-     this->doctors.push_back(doctor);
+    this->doctors.push_back(doctor);
+}
+
+void Hospital::create_doctor(string name, int age, string gender, string phone_number, string specialization)
+{
+    try {
+        if ((gender == "male") && (specialization == "general"))
+        {
+            Doctor doc(name, age, Person::Gender::Male, phone_number, Doctor::Specialization::General);
+
+            add_doctor(doc);
+        }
+
+        if ((gender == "male") && (specialization == "expert"))
+        {
+            if (get_manager_xp() <= 20)
+            {
+                throw out_of_range("Your XP must be higher than 20");
+            }
+
+            Doctor doc(name, age, Person::Gender::Male, phone_number, Doctor::Specialization::Expert);
+
+            add_doctor(doc);
+        }
+
+        if ((gender == "male") && (specialization == "surgeon"))
+        {
+            if (get_manager_xp() <= 50)
+            {
+                throw out_of_range("Your XP must be higher than 50");
+            }
+
+            Doctor doc(name, age, Person::Gender::Male, phone_number, Doctor::Specialization::Surgeon);
+
+            add_doctor(doc);
+        }
+
+        if ((gender == "female") && (specialization == "general"))
+        {
+            Doctor doc(name, age, Person::Gender::Female, phone_number, Doctor::Specialization::General);
+
+            add_doctor(doc);
+
+        }
+
+        if ((gender == "female") && (specialization == "expert"))
+        {
+            if (get_manager_xp() <= 20)
+            {
+                throw out_of_range("Your XP must be higher than 20");
+            }
+
+            Doctor doc(name, age, Person::Gender::Female, phone_number, Doctor::Specialization::Expert);
+
+            add_doctor(doc);
+        }
+
+        if ((gender == "female") && (specialization == "surgeon"))
+        {
+            if (get_manager_xp() <= 50)
+            {
+                throw out_of_range("Your XP must be higher than 50");
+            }
+
+            Doctor doc(name, age, Person::Gender::Female, phone_number, Doctor::Specialization::Surgeon);
+
+            add_doctor(doc);
+        }
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << endl;
+    }
 }
 
 void Hospital::add_patient(Patient patient)
 {
-     this->patients.push_back(patient);
+    this->patients.push_back(patient);
 }
 
-void Hospital::increase_manager_xp(unsigned int xp)
+void Hospital::create_patient(string name, int age, string gender, string phone_number, string insurance, string illness)
 {
-     this->manager_xp += xp;
+    if ((gender == "male") && (insurance == "no") && (illness == "surface"))
+    {
+        string fee = "200$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::No, Patient::Illness::Surface, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "male") && (insurance == "no") && (illness == "emergency"))
+    {
+        string fee = "500$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::No, Patient::Illness::Emergency, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "male") && (insurance == "no") && (illness == "surgery"))
+    {
+        string fee = "1000$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::No, Patient::Illness::Surgery, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "female") && (insurance == "no") && (illness == "surface"))
+    {
+        string fee = "200$";
+
+        Patient pat(name, age, Person::Gender::Female, phone_number, Patient::Insurance::No, Patient::Illness::Surface, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "female") && (insurance == "no") && (illness == "emergency"))
+    {
+        string fee = "500$";
+
+        Patient pat(name, age, Person::Gender::Female, phone_number, Patient::Insurance::No, Patient::Illness::Emergency, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "female") && (insurance == "no") && (illness == "surgery"))
+    {
+        string fee = "1000$";
+
+        Patient pat(name, age, Person::Gender::Female, phone_number, Patient::Insurance::No, Patient::Illness::Surgery, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "male") && (insurance == "yes") && (illness == "surface"))
+    {
+        string fee = "100$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::Yes, Patient::Illness::Surface, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "male") && (insurance == "yes") && (illness == "emergency"))
+    {
+        string fee = "250$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::Yes, Patient::Illness::Emergency, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "male") && (insurance == "Yes") && (illness == "surgery"))
+    {
+        string fee = "500$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::Yes, Patient::Illness::Surgery, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "female") && (insurance == "Yes") && (illness == "surface"))
+    {
+        string fee = "100$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::Yes, Patient::Illness::Surface, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "female") && (insurance == "Yes") && (illness == "emergency"))
+    {
+        string fee = "250$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::Yes, Patient::Illness::Emergency, fee);
+
+        add_patient(pat);
+    }
+
+    if ((gender == "female") && (insurance == "Yes") && (illness == "surgery"))
+    {
+        string fee = "500$";
+
+        Patient pat(name, age, Person::Gender::Male, phone_number, Patient::Insurance::Yes, Patient::Illness::Surgery, fee);
+
+        add_patient(pat);
+    }
 }
 
-void Hospital::decrease_manager_xp(unsigned int xp)
+void Hospital::increase_manager_xp(int xp)
 {
-     this->manager_xp -= xp;
+    this->manager_xp += xp;
 }
 
-unsigned int Hospital::get_manager_xp()
+void Hospital::decrease_manager_xp(int xp)
 {
-     return manager_xp;
+    this->manager_xp -= xp;
 }
 
-unsigned int Hospital::set_room_for_visit()
+int Hospital::get_manager_xp()
 {
-     unsigned int temp;
-     bool found = false;
-
-     srand(time(0));
-          
-     while(!found)
-     {
-          found = true;
-          temp = rand() % 50 + 1;
-
-          for (size_t i = 0; i < rooms.size(); i++)
-          {
-               if (rooms[i] == temp)
-               {
-                    found = false;
-               }
-          }
-     }
-
-     this->rooms.push_back(temp);
-     return temp;
+    return manager_xp;
 }
 
-void Hospital::set_visit(string doctor_name, string patient_name)
-{    
-     if (search_patient(patient_name).get_illness() == 0)
-     {
-          if (search_doctor(doctor_name).get_specialization() == 1)
-          {
-               if (get_manager_xp() >= 10)
-               {
-                    decrease_manager_xp(10);
-               }
-               throw invalid_argument("Bad choice --> -10xp");
-          }
-          
-          if (search_doctor(doctor_name).get_specialization() == 2)
-          {
-               if (get_manager_xp() >= 20)
-               {
-                    decrease_manager_xp(20);
-               }
-               throw invalid_argument("Bad choice --> -20xp");
-          }
+void Hospital::increase_hospital_money(int money)
+{
+    this->hospital_money += money;
+}
 
-          system("clear");
-          search_patient(patient_name).set_status(Patient::Status::Cured);
-          increase_manager_xp(10);
-          cout << "------------------------"                                                            << endl;
-          cout << "--Visit report"                                                                      << endl;
-          cout << " "                                                                                   << endl;
-          cout << "Doctor : " << doctor_name << " | " << "ID : " << search_doctor(doctor_name).get_id() << endl;
-          cout << "Patient : " << patient_name                                                          << endl;
-          cout << "Room : "     << set_room_for_visit()                                                 << endl;
-          if (search_patient(patient_name).get_insurance() == 0 )
-          {
-               cout << "Cost = 150$"                                                                    << endl;
-          }
-          if (search_patient(patient_name).get_insurance() == 1 )
-          {
-               cout << "Cost = 75$"                                                                     << endl;
-          }
-          cout << "Done"                                                                                << endl;
-          cout << "------------------------"                                                            << endl;
-     }
-     
-     if (search_patient(patient_name).get_illness() == 1)
-     {
-          if (search_doctor(doctor_name).get_specialization() == 0)
-          {
-               if (get_manager_xp() >= 20)
-               {
-                    decrease_manager_xp(20);
-               }
-               throw invalid_argument("Bad choice --> -10xp");
-          }
-          
-          if (search_doctor(doctor_name).get_specialization() == 2)
-          {
-               if (get_manager_xp() >= 10)
-               {
-                    decrease_manager_xp(10);
-               }
-               throw invalid_argument("Bad choice --> -20xp");
-          }
-
-          system("clear");
-          search_patient(patient_name).set_status(Patient::Status::Cured);
-          increase_manager_xp(20);
-          cout << "------------------------"                                                            << endl;
-          cout << "--Visit report"                                                                      << endl;
-          cout << " "                                                                                   << endl;
-          cout << "Doctor : " << doctor_name << " | " << "ID : " << search_doctor(doctor_name).get_id() << endl;
-          cout << "Patient : " << patient_name                                                          << endl;
-          cout << "Room : "     << set_room_for_visit()                                                 << endl;
-          if (search_patient(patient_name).get_insurance() == 0 )
-          {
-               cout << "Cost = 300$"                                                                    << endl;
-          }
-          if (search_patient(patient_name).get_insurance() == 1 )
-          {
-               cout << "Cost = 150$"                                                                    << endl;
-          }
-          cout << "Done"                                                                                << endl;
-          cout << "------------------------"                                                            << endl;
-     }
-
-     if (search_patient(patient_name).get_illness() == 2)
-     {
-          if (search_doctor(doctor_name).get_specialization() == 0)
-          {
-               if (get_manager_xp() >= 30)
-               {
-                    decrease_manager_xp(30);
-               }
-               throw invalid_argument("Bad choice --> -10xp");
-          }
-          
-          if (search_doctor(doctor_name).get_specialization() == 1)
-          {
-               if (get_manager_xp() >= 20)
-               {
-                    decrease_manager_xp(20);
-               }
-               throw invalid_argument("Bad choice --> -20xp");
-          }
-
-          system("clear");
-          search_patient(patient_name).set_status(Patient::Status::Cured);
-          increase_manager_xp(30);
-          cout << "------------------------"                                                            << endl; 
-          cout << "--Visit report"                                                                      << endl;
-          cout << " "                                                                                   << endl;
-          cout << "Doctor : " << doctor_name << " | " << "ID : " << search_doctor(doctor_name).get_id() << endl;
-          cout << "Patient : " << patient_name                                                          << endl;
-          cout << "Room : "     << set_room_for_visit()                                                 << endl;
-          if (search_patient(patient_name).get_insurance() == 0 )
-          {
-               cout << "Cost = 2000$"                                                                   << endl;
-          }
-          if (search_patient(patient_name).get_insurance() == 1 )
-          {
-               cout << "Cost = 1000$"                                                                   << endl;
-          }
-          cout << "Done"                                                                                << endl;
-          cout << "------------------------"                                                            << endl;
-     }
+int Hospital::get_hospital_money()
+{
+    return hospital_money;
 }
 
 Doctor & Hospital::search_doctor(string name)
 {
-     for (size_t i = 0; i < doctors.size(); i++)
-     {
-          if (doctors[i].get_name() == name)
-          {
-               return doctors[i];          
-          }
-     }
-     throw out_of_range("Doctor with this name not found");
+    for (size_t i = 0; i < doctors.size(); i++)
+    {
+        if (doctors[i].get_name() == name)
+        {
+            return doctors[i];
+        }
+    }
 }
 
 Patient & Hospital::search_patient(string name)
 {
-     for (size_t i = 0; i < patients.size(); i++)
-     {
-          if (patients[i].get_name() == name)
-          {
-               return patients[i];          
-          }
-     }
-     throw out_of_range("Patient with this name not found");
+    for (size_t i = 0; i < patients.size(); i++)
+    {
+        if (patients[i].get_name() == name)
+        {
+            return patients[i];
+        }
+    }
 }
 
-void Hospital::show_inf() 
+int Hospital::get_doctors_size()
 {
-     system("clear");
-     cout << "------------------------"                    << endl;
-     cout << "--Hospital Information"                      << endl;
-     cout << "Number of Doctors : "    << doctors.size()   << endl;
-     cout << "Number of Patients : "   << patients.size()  << endl;
-     cout << "Number of rooms : "      << 50               << endl;
-     cout << "Manager XP : "           << get_manager_xp() << endl;
-     cout << "------------------------"                    << endl;
+    int size = doctors.size();
+
+    return size;
+}
+
+int Hospital::get_patients_size()
+{
+    int size = patients.size();
+
+    return size;
 }
